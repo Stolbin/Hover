@@ -21,7 +21,12 @@ body {
 }
 
 .wrapper {
+    width: calc(100% - 10px);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     display: inline-flex;
+    gap: 15px;
     list-style: none;
 }
 
@@ -72,6 +77,11 @@ body {
     -50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(
     0.68, -0.55, 0.265, 1.55);
+}
+
+.icon:hover {
+    scale: 1.1;
+    transition: scale 350ms ease;
 }
 
 .wrapper .icon:hover .tooltip {

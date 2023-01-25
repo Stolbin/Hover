@@ -1,20 +1,22 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background: #000;
 }
 
 .icon-back {    
-  display: block;
-  color: #fff;
-  stroke: currentColor;
-  fill: #fff;
-  margin-top: 40px;
-  margin-left: 40px;
+    display: block;
+    color: #fff;
+    stroke: currentColor;
+    fill: #fff;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
+.box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .wrapper {
     position: relative;
     display: flex;

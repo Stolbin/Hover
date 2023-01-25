@@ -6,6 +6,15 @@ body {
     background: #000;
 }
 
+.icon-back {    
+  display: block;
+  color: #fff;
+  stroke: currentColor;
+  fill: #fff;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
 .wrapper {
     position: relative;
     display: flex;

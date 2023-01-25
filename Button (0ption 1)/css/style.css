@@ -1,3 +1,14 @@
+body {
+  background: rgb(0, 0, 0);  
+}
+.icon-back {    
+  display: block;
+  color: #fff;
+  stroke: currentColor;
+  fill: #fff;
+  margin-top: 40px;
+  margin-left: 40px;
+}
 .container {
     width: 100%;
     min-height: 100vh;

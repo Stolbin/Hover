@@ -5,6 +5,15 @@ body {
     font-family: sans-serif;
 }
 
+.icon-back {    
+  display: block;
+  color: #fff;
+  stroke: currentColor;
+  fill: #fff;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
 ul {
     position: absolute;
     top: 50%;

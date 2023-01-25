@@ -3,13 +3,25 @@
 /* style */
 
 body {
+    background: slateblue;
+    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+.image-box {
     width: 100%;
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background: slateblue;
-    font-family: "Lato", sans-serif;
-    font-family: "Poppins", sans-serif;
+}
+
+.icon-back {    
+  display: block;
+  color: #fff;
+  stroke: currentColor;
+  fill: #fff;
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
 .row {

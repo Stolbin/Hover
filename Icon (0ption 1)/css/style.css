@@ -1,11 +1,23 @@
 body {
+    font-family: sans-serif;
+    background: linear-gradient(
+    315deg, #ffffff, #d7e1ec);
+}
+
+.icons-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: sans-serif;
-    background: linear-gradient(
-    315deg, #ffffff, #d7e1ec);
+}
+
+.icon-back {
+    display: block;
+    color: rgb(0, 0, 0);
+    stroke: currentColor;
+    fill: rgb(0, 0, 0);
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 .wrapper {

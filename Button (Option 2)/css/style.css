@@ -6,7 +6,17 @@ body {
     background: black;
 }
 
-a {
+.icon-back {    
+    position: absolute;  
+    display: block;
+    color: #fff;
+    stroke: currentColor;
+    fill: #fff;
+    top: 40px;
+    left: 40px;
+}
+
+.btn-link {
     position: relative;
     width: 250px;
     height: 100px;
@@ -16,10 +26,11 @@ a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: 10px;
 }
 
-a::before,
-a::after {
+.btn-link::before,
+.btn-link::after {
     position: absolute;
     content: "";
     width: 5px;
@@ -27,22 +38,23 @@ a::after {
     transition: 500ms;
 }
 
-a::before {
+.btn-link::before {
     left: 0;
     background: rgb(252, 0, 21);
 }
 
-a::after {
+.btn-link::after {
     right: 0;
     background: teal;
+
 }
 
-a:hover::after,
-a:hover::before {
+.btn-link:hover::after,
+.btn-link:hover::before {
     width: 50%;
 }
 
-a span {
+.btn-link span {
     position: absolute;
     font-size: 2.5rem;
     color: white;
@@ -50,22 +62,22 @@ a span {
     transition: 500ms;
 }
 
-a span:nth-child(1) {
+.btn-link span:nth-child(1) {
     transition-delay: 300ms;
 }
 
-a:hover span:nth-child(1) {
+.btn-link:hover span:nth-child(1) {
     transition-delay: 0s;
     transform: scale(0);
 }
 
-a span:nth-child(2) {
+.btn-link span:nth-child(2) {
     transition-delay: 0s;
     transform: scale(6);
     opacity: 0;
 }
 
-a:hover span:nth-child(2) {
+.btn-link:hover span:nth-child(2) {
     transition-delay: 300ms;
     transform: scale(1);
     opacity: 1;

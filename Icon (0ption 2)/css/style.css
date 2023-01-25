@@ -5,6 +5,15 @@
     transform: translate(-50%, -50%);
 }
 
+.icon-back {    
+    display: block;
+    color: rgb(0, 0, 0);
+    stroke: currentColor;
+    fill: rgb(2, 0, 0);
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
 .social-icons {
     padding: 0;
     list-style: none;
@@ -54,7 +63,7 @@
     -webkit-transform: scale(2.2);
     color: #ff003c;
     background: -webkit-linear-gradient( 45deg, #ff003c, #c648c8);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     transition: all 265ms ease-in;
 }

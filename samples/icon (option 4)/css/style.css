@@ -7,8 +7,18 @@ body {
     color: #fff;
     stroke: currentColor;
     fill: #fff;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+}
+@media (min-width: 767px) {
+    .icon-back {
+        margin-top: 40px;
+        margin-left: 40px;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .box-icon {
@@ -16,10 +26,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 30px;
 }
 .wrapper {
     position: relative;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 ul li {
@@ -44,16 +57,27 @@ ul li a::before {
     transition: 0.5s ease-in-out;
 }
 
-ul li:nth-child(1) a::before {
-    content: "\f232";
-    color: #25d366;
-    border-bottom: 4px solid #25d366;
+.wrapper-two  li:nth-child(1) a::before {
+    content: "\f099";
+    color: #1da1f2;
 }
 
-ul li:nth-child(2) a::before {
+.wrapper-two  li:nth-child(2) a::before {
     content: "\f099";
     color: #1da1f2;
     border-bottom: 4px solid #1da1f2;
+    
+}
+
+.wrapper-one  li:nth-child(1) a::before {
+    content: "\f232";
+    color: #25d366;
+}
+
+.wrapper-one li:nth-child(2) a::before {
+    content: "\f232";
+    color: #25d366;
+    border-bottom: 4px solid #25d366;
 }
 
 ul li:hover a::before {

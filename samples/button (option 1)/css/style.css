@@ -1,23 +1,45 @@
 body {
-  background: rgb(0, 0, 0);  
-}
-.icon-back {    
-  display: block;
-  color: #fff;
-  stroke: currentColor;
-  fill: #fff;
-  margin-top: 40px;
-  margin-left: 40px;
-}
-.container {
-    width: 100%;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(0, 0, 0);  
+}
+.icon-back {   
+    position: absolute; 
+    display: block;
+    color: #fff;
+    stroke: currentColor;
+    fill: #fff;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+}
+@media (min-width: 767px) {
+    .icon-back {
+        top: 40px;
+        left: 40px;
+        width: 40px;
+        height: 40px;
+    }
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 120px;
+    gap: 150px;
     background: currentColor;
+}
+@media (min-width: 767px) {
+    .container {
+        flex-wrap: none;
+    }
 }
 
 .button {

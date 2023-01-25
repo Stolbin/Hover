@@ -12,8 +12,18 @@ body {
     color: #fff;
     stroke: currentColor;
     fill: #fff;
-    top: 40px;
-    left: 40px;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+}
+@media (min-width: 767px) {
+    .icon-back {
+        top: 40px;
+        left: 40px;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .btn-link {

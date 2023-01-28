@@ -56,7 +56,7 @@ body {
     font-weight: 600;
     border-radius: 15px;
     border: 0.5px solid rgb(199, 180, 180);    
-    transition: scale 350ms ease;
+    transition: scale 350ms ease, color 450ms ease;
     background: #7f9e8d;
     color: rgb(219, 226, 203);
 }
@@ -69,5 +69,7 @@ body {
 .btn-link:hover {
     scale: 1.05;
     background: linear-gradient( 45deg, #7f9e8d, #8eb661);
-    transition: scale 450ms ease, background 450ms ease;
+    transition: scale 450ms ease, color 450ms ease;
+    color: rgb(240, 238, 151);
+    
 }

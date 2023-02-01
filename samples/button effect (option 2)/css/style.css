@@ -1,0 +1,55 @@
+* {
+  font-family: "Verdana", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 5px;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  border-radius: 20px;
+  background: rgb(53, 53, 53);
+}
+.btn {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  appearance: none;
+  background: #2b54c7;
+  padding: 1.3rem 2.4rem;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.btn span {
+  position: relative;
+  pointer-events: none;
+}
+
+.btn::before {
+  --size: 0;
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #bace48, transparent);
+  transform: translate(-25%, -60%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.btn:hover::before {
+  --size: 300px;
+}

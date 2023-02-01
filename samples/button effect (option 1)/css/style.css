@@ -7,34 +7,28 @@
 
 * {
   font-family: "Verdana", sans-serif;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  letter-spacing: 0px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  margin: 0;
 }
-
-html {
-  padding: 3rem;
-  background-color: #212123;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #efefef;
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  border-radius: 20px;
+  background: rgb(53, 53, 53);
 }
-
-.conteudo {
-  box-sizing: border-box;
+.button {
   letter-spacing: 0px;
   color: #efefef;
   font-size: 18px;
   font-weight: 700;
-  font-family: "Verdana", sans-serif;
   background: linear-gradient(to right, var(--cores-dancantes));
   width: 250px;
   height: 90px;
   border-radius: 10px;
-  position: relative;
   border: none;
   z-index: 999;
   animation: coresDancantes 2s linear infinite;
@@ -43,37 +37,41 @@ html {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
 @keyframes coresDancantes {
   100% {
     filter: hue-rotate(360deg);
   }
 }
-
-.conteudo .caixa {
+.pseudoButton {
   z-index: 1;
   background-color: var(--cor-background);
-  width: 240px;
-  height: 80px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: absolute;
   padding: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 650ms linear;
 }
-
-.conteudo > span {
+.pseudoButton:hover {
+  opacity: 0.9;
+  transition: opacity 650ms linear;
+}
+.button > span {
   height: 100%;
   width: 100%;
   background: inherit;
   border-radius: 10px;
 }
-
-.conteudo > span:nth-child(1) {
+.button > span:nth-child(1) {
   filter: blur(2px);
 }
-
-.conteudo > span:nth-child(2) {
+.button > span:nth-child(2) {
   filter: blur(5px);
 }

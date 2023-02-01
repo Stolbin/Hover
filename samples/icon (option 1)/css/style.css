@@ -86,28 +86,38 @@
 .wrapper .facebook:hover .tooltip::before {
   background: #1877f2;
   color: #ffffff;
+  box-shadow: 0px 0px 8px #ffffff;
+  transition: background 150ms ease;
 }
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before {
   background: #1da1f2;
   color: #ffffff;
+  box-shadow: 0px 0px 8px #ffffff;
+  transition: background 150ms ease;
 }
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
   background: #e4405f;
   color: #ffffff;
+  box-shadow: 0px 0px 8px #ffffff;
+  transition: background 150ms ease;
 }
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
   background: #171515;
   color: #ffffff;
+  box-shadow: 0px 0px 8px #ffffff;
+  transition: background 150ms ease;
 }
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
   background: #cd201f;
   color: #ffffff;
+  box-shadow: 0px 0px 8px #ffffff;
+  transition: background 150ms ease;
 }

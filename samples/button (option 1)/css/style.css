@@ -1,27 +1,12 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(0, 0, 0);
-}
-.icon-back {
+.box {
   position: absolute;
-  display: block;
-  color: #fff;
-  stroke: currentColor;
-  fill: #fff;
-  top: 20px;
-  left: 20px;
-  width: 20px;
-  height: 20px;
-}
-@media (min-width: 767px) {
-  .icon-back {
-    top: 40px;
-    left: 40px;
-    width: 40px;
-    height: 40px;
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  border-radius: 20px;
+  background: rgb(53, 53, 53);
 }
 .container {
   position: absolute;
@@ -34,20 +19,18 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 150px;
-  background: currentColor;
 }
 @media (min-width: 767px) {
   .container {
     flex-wrap: none;
   }
 }
-
 .button {
   position: relative;
   padding: 16px 30px;
   font-size: 1.5rem;
   color: var(--color);
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 2px solid rgb(53, 53, 53);
   border-radius: 4px;
   text-shadow: 0 0 15px var(--color);
   text-decoration: none;

@@ -37,12 +37,6 @@ address {
   font-style: normal;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  font-family: "Ubuntu Mono", monospac;
-
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;

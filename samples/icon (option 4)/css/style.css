@@ -1,85 +1,67 @@
-body {
-    background: #000;
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  border-radius: 20px;
+  background: rgb(53, 53, 53);
 }
-
-.icon-back {    
-    display: block;
-    color: #fff;
-    stroke: currentColor;
-    fill: #fff;
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 20px;
-    height: 20px;
-}
-@media (min-width: 767px) {
-    .icon-back {
-        margin-top: 40px;
-        margin-left: 40px;
-        width: 40px;
-        height: 40px;
-    }
-}
-
 .box-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  gap: 30px;
 }
 .wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-
 ul li {
-    position: relative;
-    margin: 0 20px;
-    cursor: pointer;
+  position: relative;
+  margin: 0 20px;
+  cursor: pointer;
 }
-
 ul li a .fa-brands {
-    font-size: 6rem;
-    color: #222;
+  font-size: 6rem;
+  color: #000000;
 }
-
 ul li a::before {
-    font-family: "FontAwesome";
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 6rem;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 6rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
 }
-
-.wrapper-two  li:nth-child(1) a::before {
-    content: "\f099";
-    color: #1da1f2;
+.wrapper-two li:nth-child(1) a::before {
+  content: "\f099";
+  color: #1da1f2;
 }
-
-.wrapper-two  li:nth-child(2) a::before {
-    content: "\f099";
-    color: #1da1f2;
-    border-bottom: 4px solid #1da1f2;
-    
+.wrapper-two li:nth-child(2) a::before {
+  content: "\f099";
+  color: #1da1f2;
+  border-bottom: 4px solid #1da1f2;
 }
-
-.wrapper-one  li:nth-child(1) a::before {
-    content: "\f232";
-    color: #25d366;
+.wrapper-one li:nth-child(1) a::before {
+  content: "\f232";
+  color: #25d366;
 }
-
 .wrapper-one li:nth-child(2) a::before {
-    content: "\f232";
-    color: #25d366;
-    border-bottom: 4px solid #25d366;
+  content: "\f232";
+  color: #25d366;
+  border-bottom: 4px solid #25d366;
 }
-
 ul li:hover a::before {
-    height: 100%;
+  height: 100%;
 }

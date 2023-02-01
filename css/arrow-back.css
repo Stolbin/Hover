@@ -1,0 +1,28 @@
+body {
+  background: rgb(218, 208, 208);
+}
+.icon-back {
+  position: absolute;
+  color: rgb(5, 145, 0);
+  stroke: currentColor;
+  fill: currentColor;
+  top: 20px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  transition: scale 450ms linear, fill 450ms linear, color 450ms linear;
+}
+@media (min-width: 767px) {
+  .icon-back {
+    top: 40px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+  }
+}
+.icon-back:hover {
+  scale: 1.15;
+  color: rgb(7, 201, 0);
+  fill: currentColor;
+  transition: scale 450ms linear, fill 450ms linear, color 450ms linear;
+}

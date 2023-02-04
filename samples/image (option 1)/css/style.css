@@ -3,33 +3,54 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.image-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 85%;
-  min-height: 85%;
-  border-radius: 20px;
-  background: rgb(53, 53, 53);
-}
-
-.row {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.box {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  width: 85%;
+  height: auto;
+  border-radius: 20px;
+  background: rgb(53, 53, 53);
+  padding: 30px;
 }
-
+@media (min-width: 768px) {
+  .box {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .box {
+    margin-top: 80px;
+    height: 50vw;
+  }
+}
+.row {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .row {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .row {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
 .row .card {
-  width: 300px;
-  height: 400px;
+  width: 210px;
+  height: 280px;
   position: relative;
   border: none;
   border-radius: 70px 10px 70px 10px;
@@ -38,13 +59,23 @@ body {
   cursor: pointer;
   margin: 10px 5px;
 }
-
+@media (min-width: 768px) {
+  .row .card {
+    width: 240px;
+    height: 320px;
+  }
+}
+@media (min-width: 1200px) {
+  .row .card {
+    width: 300px;
+    height: 400px;
+  }
+}
 .row .card img {
   width: 105%;
   height: 105%;
   object-fit: cover;
 }
-
 .row .card .content {
   position: absolute;
   width: 100%;
@@ -61,31 +92,24 @@ body {
   );
   transition: all 0.5s linear;
 }
-
 .row .card .content.box-1 {
   clip-path: circle(0% at 0 100%);
 }
-
 .row .card:hover .content.box-1 {
   clip-path: circle(141.4% at 0 100%);
 }
-
 .row .card .content.box-2 {
   clip-path: circle(0% at 50% 50%);
 }
-
 .row .card:hover .content.box-2 {
   clip-path: circle(70.7% at 50% 50%);
 }
-
 .row .card .content.box-3 {
-  clip-path: circle(0% at 100% 0%);
+  clip-path: circle(0% at 10% 0%);
 }
-
 .row .card:hover .content.box-3 {
-  clip-path: circle(141.7% at 100% 0%);
+  clip-path: circle(141.7% at 10% 0%);
 }
-
 .row .card .content h3 {
   font-size: 35px;
   color: #ffffff;
@@ -94,22 +118,18 @@ body {
   letter-spacing: 2px;
   padding-bottom: 5px;
 }
-
 .row .card .content p {
   font-size: 18px;
   color: #ffffff;
   padding-bottom: 1px;
 }
-
 .row .card .content ul {
   display: block;
 }
-
 .row .card .content ul li {
   display: inline-block;
   margin: 0 5px;
 }
-
 .row .card .content ul li a {
   display: block;
   color: #ffffff;
@@ -117,7 +137,6 @@ body {
   padding: 10px;
   transition: all 0.5s linear;
 }
-
 .row .card .content ul li:hover a {
   transform: translateY(-10px);
 }

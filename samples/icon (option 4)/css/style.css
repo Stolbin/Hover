@@ -17,7 +17,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   height: 100vh;
-  gap: 30px;
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  .box-icon {
+    gap: 30px;
+  }
 }
 .wrapper {
   position: relative;
@@ -27,11 +32,16 @@
 }
 ul li {
   position: relative;
-  margin: 0 20px;
+  margin: 0 10px;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  ul li {
+    margin: 0 20px;
+  }
+}
 ul li a .fa-brands {
-  font-size: 6rem;
+  font-size: 96px;
   color: #000000;
 }
 ul li a::before {
@@ -39,7 +49,7 @@ ul li a::before {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 6rem;
+  font-size: 96px;
   height: 0;
   overflow: hidden;
   transition: 0.5s ease-in-out;

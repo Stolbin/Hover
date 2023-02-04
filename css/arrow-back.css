@@ -12,7 +12,15 @@ body {
   height: 20px;
   transition: scale 450ms linear, fill 450ms linear, color 450ms linear;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+  .icon-back {
+    top: 30px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 1200px) {
   .icon-back {
     top: 40px;
     left: 40px;

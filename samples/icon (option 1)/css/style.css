@@ -65,8 +65,8 @@
   background: #ffffff;
   bottom: -3px;
   left: 50%;
-  -webkit-transform: translate(-50%) rotate(45deg);
-  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .icon:hover {
   scale: 1.1;
@@ -88,7 +88,7 @@
   background: #1877f2;
   color: #ffffff;
   box-shadow: 0px 0px 8px #ffffff;
-  -webkit-transition: background 150ms ease;
+  transition: background 150ms ease;
 }
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
@@ -96,7 +96,7 @@
   background: #1da1f2;
   color: #ffffff;
   box-shadow: 0px 0px 8px #ffffff;
-  -webkit-transition: background 150ms ease;
+  transition: background 150ms ease;
 }
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
@@ -104,7 +104,7 @@
   background: #e4405f;
   color: #ffffff;
   box-shadow: 0px 0px 8px #ffffff;
-  -webkit-transition: background 150ms ease;
+  transition: background 150ms ease;
 }
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
@@ -120,5 +120,5 @@
   background: #cd201f;
   color: #ffffff;
   box-shadow: 0px 0px 8px #ffffff;
-  -webkit-transition: background 150ms ease;
+  transition: background 150ms ease;
 }

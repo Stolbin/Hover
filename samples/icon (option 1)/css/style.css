@@ -75,8 +75,8 @@
 .wrapper .icon:hover .tooltip {
   top: -45px;
   opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  /* visibility: visible;
+  pointer-events: auto; */
 }
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {

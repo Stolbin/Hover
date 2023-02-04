@@ -14,7 +14,6 @@
 .row {
   width: 40%;
   height: auto;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -25,7 +24,6 @@
 }
 @media (min-width: 768px) {
   .row {
-    margin-top: 0px;
     width: 100%;
     flex-direction: column;
   }

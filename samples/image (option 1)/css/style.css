@@ -24,7 +24,7 @@ body {
 @media (min-width: 1200px) {
   .box {
     margin-top: 80px;
-    height: 50vw;
+    height: 40vw;
   }
 }
 .row {
